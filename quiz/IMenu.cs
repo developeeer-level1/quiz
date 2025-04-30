@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace quiz
 {
-    internal class Registration
+    internal interface IMenu
     {
-        private string field = "╔════════╗\n║        ║\n╚════════╝";
+        void Display();
+        void ClearItself();
+        int Input();
     }
 }
